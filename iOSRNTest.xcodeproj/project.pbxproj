@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A12B62E2D516219A62CAE9E /* Pods_iOSRNTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C613A52D7D82E45269143764 /* Pods_iOSRNTest.framework */; };
 		AF816CD425E28F7D003C0743 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF816CD325E28F7D003C0743 /* AppDelegate.m */; };
 		AF816CD725E28F7D003C0743 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF816CD625E28F7D003C0743 /* SceneDelegate.m */; };
 		AF816CDA25E28F7D003C0743 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF816CD925E28F7D003C0743 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A16A45EFAA2BB667F82B8461 /* Pods-iOSRNTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSRNTest.debug.xcconfig"; path = "Target Support Files/Pods-iOSRNTest/Pods-iOSRNTest.debug.xcconfig"; sourceTree = "<group>"; };
 		AF816CCF25E28F7D003C0743 /* iOSRNTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSRNTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF816CD225E28F7D003C0743 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF816CD325E28F7D003C0743 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		AF816CE125E28F7E003C0743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF816CE325E28F7E003C0743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF816CE425E28F7E003C0743 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE9569C323A1C6220DB29FB0 /* Pods-iOSRNTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSRNTest.release.xcconfig"; path = "Target Support Files/Pods-iOSRNTest/Pods-iOSRNTest.release.xcconfig"; sourceTree = "<group>"; };
+		C613A52D7D82E45269143764 /* Pods_iOSRNTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSRNTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A12B62E2D516219A62CAE9E /* Pods_iOSRNTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76EB7659D949A47DA0D63F15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C613A52D7D82E45269143764 /* Pods_iOSRNTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF816CC625E28F7D003C0743 = {
 			isa = PBXGroup;
 			children = (
 				AF816CD125E28F7D003C0743 /* iOSRNTest */,
 				AF816CD025E28F7D003C0743 /* Products */,
+				C46870E1E04EF77ED5AE51FD /* Pods */,
+				76EB7659D949A47DA0D63F15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,16 @@
 			path = iOSRNTest;
 			sourceTree = "<group>";
 		};
+		C46870E1E04EF77ED5AE51FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A16A45EFAA2BB667F82B8461 /* Pods-iOSRNTest.debug.xcconfig */,
+				BE9569C323A1C6220DB29FB0 /* Pods-iOSRNTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF816CE825E28F7E003C0743 /* Build configuration list for PBXNativeTarget "iOSRNTest" */;
 			buildPhases = (
+				F5492E29A040BBF72A7CE321 /* [CP] Check Pods Manifest.lock */,
 				AF816CCB25E28F7D003C0743 /* Sources */,
 				AF816CCC25E28F7D003C0743 /* Frameworks */,
 				AF816CCD25E28F7D003C0743 /* Resources */,
+				89D40CA40A4D3C41C98B1782 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89D40CA40A4D3C41C98B1782 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSRNTest/Pods-iOSRNTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSRNTest/Pods-iOSRNTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSRNTest/Pods-iOSRNTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5492E29A040BBF72A7CE321 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSRNTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF816CCB25E28F7D003C0743 /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		AF816CE925E28F7E003C0743 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A16A45EFAA2BB667F82B8461 /* Pods-iOSRNTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		AF816CEA25E28F7E003C0743 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE9569C323A1C6220DB29FB0 /* Pods-iOSRNTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

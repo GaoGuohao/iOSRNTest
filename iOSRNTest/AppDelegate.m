@@ -7,6 +7,11 @@
 
 #import "AppDelegate.h"
 
+// 导入RNSDK
+#import <React/RCTBridge.h>
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
+
 @interface AppDelegate ()
 
 @end
